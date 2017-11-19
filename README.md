@@ -1,24 +1,9 @@
-# Assignment 2: The Front-end
+How to use/features of web aplication
 
-In this assignment, you are responsible for building a front-end for your web application. You will build on top of your first assignment, and present the data retrieved from the API(s) you have found.  
+Our website uses two APIs: The Google Maps API and the Ticketmaster API to display events to the user as a list view and as well as a map view. The user is able to navigate through the list view and open a detailed view of the event or can view just the map with different event locations. All the views on our website have been made responsive using bootstrap and we have also added animations to some of our views using an open source css library called animate.css
 
-The assignment sits here: https://classroom.github.com/g/jZjBSSlY. 
-
-## Specifications:
-Given that every group is using different API(s) and has a different end-product in mind, you are responsible for defining a reasonable scope for your web-application. Here are a few standard guidelines that you are expected to adhere to:
-
-- The application should be a one-page responsive, web application with at least three distinct views that a user can navigate through. 
-- Most user interactions will be handled on the front-end and resolved by javascript running in the browser.  While you are allowed to send requests to 3rd-party API servers, you are not allowed to implement functionality in your own server.
-- The submission of this assignment should include most of the (front-end) features you intend on demoing for your final project. (Assignment 3 will mostly focus on building a back-end for your application).
-- The file index.html will be the entry-point for the TAs marking your project. They will open that file from their local machine and expect everything to work.  No server-side code will be tested/launched during the evaluation process.
-- Include a Solutions.md explaining the features of your web application, the end-user and how s/he might use it.
-- You are expected to work in the same teams as Assignment 1, unless a TA contacted you with a change of teams.
-- The deadline for this assignment is Nov 4, 2017. The last commit before 2:00 PM on that date will be used for marking the assignment. If you plan on submitting the assignment late (refer course information for more details), you should include that in your Solutions.md.
-
-If you plan on deviating from these guidelines, talk to the prof or a TA and include an Instructions.md explaining your decision.
-
-## Additional Notes:
-- You will (probably) be using jQuery/AJAX to talk to your API, display/manipulate your data and make it interactive for a user.  Be mindful that interacting with 3rd party APIs leads to some security concerns which some APIs may not support.  
-- You are not required to use a web framework like AngularJS or a library like React. However, you have the freedom to use what you want to build your user interfaces as long as you abide to the specifications above.  
-- You will be marked on the functionality of your application, its style and usability, its responsiveness, code quality and structure, and how well the application serves your end-user.
-
+We have divided our web application according to different views:
+The landing page is the background cover page with an image which has a button embedded on it saying "Enter Website". The user clicks the website to change it's view to another one.
+The next view has a navigation bar which lists "Event List" and "Map view" to switch between different views. In addition, the search filters are present on the second view based on country code,city and category, music, sports(basketball, baseball) etc. If the user clicks the filter without enetering any text in the filter, it will lead him to the events list that are occuring in North America(TicketMaster API events).
+For the subsequent view, event detail view is entered by clicking any of the events on the event list. The detailed view will show the image of the event, location of the specific event on the map (provided by the Google Maps API), and the details of the event like date, start time, event promoter, ticket price range, venue. There is another button called "Go Back" where the user clicks to go back to the event detail view wherever they started from initially rather than the front of the view.
+The last view is the map view of the navigation bar where the user will see all the location of the events based on the filter. For example, if the user types music in the "enter event category" and toronto in the "enter country code", it will show the the music events in toronto. At any time, the user can switch between views using the navigation bar button on the right.
