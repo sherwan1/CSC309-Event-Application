@@ -1,14 +1,3 @@
-## TO-DO in this file
-
-- Include names of your team members
-- Explain the features of your web application, the end-user and how s/he might use it.
-- A note if you plan on submitting the assignment late.
-
-
-Student 1: Fahad Khan (998899731)
-Student 2: Nawabzada Maaz Farhat Khan Sherwani (999471735)
-Student 3: Fazal Shahid (1000604009)
-Student 4: Ramon Sibello (999753253)
 
 
 How to use/features of web aplication
